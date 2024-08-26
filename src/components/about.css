@@ -1,0 +1,99 @@
+/* General styles */
+.about-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: center;
+    min-height: 50vh;
+    background-color: transparent; /* Dark background */
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px 0; /* Reduced vertical padding to move content higher */
+    box-sizing: border-box;
+  }
+  
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px; /* Reduce gap between image and text */
+  }
+  
+  .about-image {
+    width: 100%;
+    max-width: 350px; /* Adjusted to make the image slightly smaller */
+    border-radius: 50%; /* Makes the image circular */
+    box-shadow: 0 0 50px rgba(255, 0, 0, 0.6); /* Red shadow around the image */
+    display: block;
+  }
+  
+  .text-container {
+    flex: 1;
+    padding: 10px; /* Reduced padding */
+  }
+  
+  h1 {
+    font-size: 4rem;
+    font-weight: 900; /* Increased font weight */
+    color: #ff0000; /* Red color for the heading */
+    margin-bottom: 10px; /* Reduced margin */
+    text-shadow: 0 0 20px rgba(255, 0, 0, 0.8); /* Red shadow around the text */
+  }
+  
+  p {
+    font-size: 1.6rem; /* Slightly increased font size */
+    line-height: 1.4; /* Slightly reduced line height */
+    font-weight: 800; /* Increased boldness */
+  }
+  
+  strong {
+    color: #ff0000; /* Red color for "IVFun" text */
+    font-weight: 900; /* Increased boldness */
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8); /* Red shadow around the text */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center; /* Center text and images in the container */
+        height: 50vh;
+        margin-bottom: 40px;
+        margin-left: 8%;
+        width: 100%;
+    }
+
+    .image-container {
+        margin-bottom: 20px; /* Add margin at the bottom of the image container */
+        text-align: center; /* Center align the content within the image container */
+        margin-left: 20%; /* Keep the image centered */
+    }
+
+    .about-image {
+        max-width: 250px;
+    }
+
+    .text-container{
+        margin-top: -12%;
+    }
+  
+    p {
+      font-size: 1.4rem; /* Adjusted font size for mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    p {
+      font-size: 1.2rem; /* Adjusted font size for smaller screens */
+    }
+  
+    .about-image {
+      max-width: 250px;
+      margin: 0 auto 20px; /* Center the image and add bottom margin */
+    }
+  }
+  

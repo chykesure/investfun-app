@@ -1,0 +1,124 @@
+body {
+    background-color: #000;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .how-to-buy-container {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-size: 6rem; /* Large font size */
+    font-weight: 900; /* Increased font weight */
+    color: #ffffff; /* White color for the text */
+    margin-bottom: 10px; /* Reduced margin below the heading */
+    text-shadow: 
+      2px 2px 0 #ff0000, /* Red stroke effect */
+      -2px -2px 0 #ff0000, /* Red stroke effect */
+      2px -2px 0 #ff0000, /* Red stroke effect */
+      -2px 2px 0 #ff0000, /* Red stroke effect */
+      0 0 50px rgba(255, 0, 0, 0.9); /* Red shadow around the text */
+  }
+  
+  .steps {
+    margin: 20px 0;
+  }
+  
+  .step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .step-number {
+    background-color: #ff0000;
+    color: #ffffff;
+    font-size: 1.5em;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    /* Ensure a perfect circle on smaller screens */
+    flex-shrink: 0;
+  }
+  
+  .step-description {
+    font-size: 1.2em;
+    text-align: left;
+  }
+  
+  .step-action {
+    color: #ff0000;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  .important-note {
+    display: flex;
+    align-items: center;
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .note-icon {
+    background-color: #ff0000;
+    color: #ffffff;
+    font-size: 1.5em;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    display: inline-flex;
+  }
+  
+  @media (max-width: 768px) {
+    .how-to-buy-container {
+      margin-bottom: 50px;
+      margin-left: 8%;
+      width: 100%;
+    }
+  
+   
+    .step-number {
+      width: 40px; /* Reduce size for mobile */
+      height: 40px; /* Ensure it's still a perfect circle */
+      font-size: 1.2em; /* Adjust font size accordingly */
+    }
+  
+    .step-description {
+      font-size: 1em;
+    }
+
+    h1 {
+      font-size: 15px;
+    }
+  
+    .important-note {
+      font-size: 0.9em;
+    }
+  
+    .note-icon {
+      font-size: 1.2em;
+      width: 75px;
+      height: 75px;
+    }
+  }
+  
